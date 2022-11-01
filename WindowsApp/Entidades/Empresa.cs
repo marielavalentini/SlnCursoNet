@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace WindowsApp.Entidades
 {
    
-    public class ClienteEmpresa
+    public class Empresa
     {
         public string Nombre { get; set; }
         public string CUIT { get; set; }

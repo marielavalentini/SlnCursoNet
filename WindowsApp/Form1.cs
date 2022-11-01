@@ -20,7 +20,7 @@ namespace WindowsApp
 
         private void btnCrearObjetos_Click(object sender, EventArgs e)
         {
-            ClienteEmpresa clienteEmpresa = new ClienteEmpresa();
+            Empresa clienteEmpresa = new Empresa();
 
             clienteEmpresa.Nombre = "Las flores SRL";
             clienteEmpresa.CUIT = "123456";

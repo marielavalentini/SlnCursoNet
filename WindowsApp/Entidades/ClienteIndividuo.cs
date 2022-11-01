@@ -5,14 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace WindowsApp.Entidades
-{
-    public class ClienteIndividuo
+{ 
+    public class ClienteIndividuo: Persona
     {
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
-        public string CUIT { get; set; }
-        public string Email { get; set; }
-        public string Direccion { get; set; }
-        public string Telefono { get; set; }
+        #region Constructores
+        public ClienteIndividuo(string pNombre, string pApellido, string pCUIT, string pEmail, string pDireccion, string pTelefono):base(pNombre,pApellido,pEmail,pDireccion,pTelefono)
+        {
+            Cuit = pCUIT;
+        }
+        #endregion
+       
+        public string Cuit { get; set; } 
     }
 }

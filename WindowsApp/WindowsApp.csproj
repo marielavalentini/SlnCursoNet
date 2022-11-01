@@ -55,11 +55,11 @@
     <Compile Include="EntidadesCaso3\Publicador.cs" />
     <Compile Include="EntidadesCaso3\Titulo.cs" />
     <Compile Include="EntidadesCaso3\Venta.cs" />
-    <Compile Include="Entidades\ClienteEmpresa.cs" />
+    <Compile Include="Entidades\Empresa.cs" />
     <Compile Include="Entidades\ClienteIndividuo.cs" />
+    <Compile Include="Entidades\DocumentoComercial.cs" />
     <Compile Include="Entidades\Factura.cs" />
     <Compile Include="Entidades\Producto.cs" />
-    <Compile Include="Entidades\Proveedor.cs" />
     <Compile Include="Entidades\Remito.cs" />
     <Compile Include="Entidades\Vendedor.cs" />
     <Compile Include="Form1.cs">
@@ -68,6 +68,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Persona.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,16 +7,20 @@ using System.Threading.Tasks;
 
 namespace WindowsApp.Entidades
 {
-    public class Remito
+    public class Remito:DocumentoComercial
     {
-        public string Numero { get; set; }
-        public DateTime Fecha { get; set; }
-        public string Cliente { get; set; }
-        public string Direccion { get; set; }
-        public string CondicionIva { get; set; }
-        public string CondicionVenta { get; set; }
-        public string Detalle { get; set; }
+        #region Constructores
+
+        public Remito(string pNumero, DateTime pFecha, string pCliente, string pDireccion, string pCondicionIva,
+            string pCondicionVenta, string pDetalle, decimal pTotal, DateTime pFechaEntrega) : base(pNumero, pFecha, pCliente,
+                pDireccion, pCondicionIva, pCondicionVenta, pDetalle, pTotal)
+        {
+            FechaEntrega = pFechaEntrega;
+        }
+        public Remito() { }
+       
+        #endregion
         public DateTime FechaEntrega { get; set; }
-        public decimal Total { get; set; }
+       
     }
 }

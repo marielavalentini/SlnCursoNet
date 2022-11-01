@@ -6,13 +6,16 @@ using System.Threading.Tasks;
 
 namespace WindowsApp.Entidades
 {
-    public class Vendedor
+    public class Vendedor:Persona
     {
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
+        #region Constructores
+        public Vendedor(string pNombre, string pApellido, string pDNI, string pEmail, string pDireccion, string pTelefono) : base(pNombre, pApellido, pEmail, pDireccion, pTelefono)
+        {
+            DNI = pDNI;
+        }
+        #endregion
+
         public string DNI { get; set; }
-        public string Email { get; set; }
-        public string Direccion { get; set; }
-        public string Telefono { get; set; }
+       
     }
 }
